@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nekutoon — Shaders, skins, texture packs y mods para Minecraft</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">NEKUTOON</a>
+    <div class="nav-links">
+      <a href="index.html">Explorar</a>
+      <a href="#guias">Guías</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">recursos para tu mundo</span>
+      <h1>Tu Minecraft.<br>Sin límites.</h1>
+      <p>Shaders, skins, texture packs y mods verificados, listos para instalar.</p>
+      <button class="btn-primary" id="scrollToGrid">Explorar shaders</button>
+    </div>
+    <div class="hero-visual" aria-hidden="true"></div>
+  </div>
+</header>
+
+<section class="wrap categories">
+  <h2>Encuentra tu próximo upgrade</h2>
+  <div class="cat-grid" id="catGrid">
+    <button class="cat-card active" data-cat="all">
+      <span class="cat-icon">✦</span>
+      <span>Todo</span>
+    </button>
+    <button class="cat-card" data-cat="shaders">
+      <span class="cat-icon">✦</span>
+      <span>Shaders</span>
+    </button>
+    <button class="cat-card" data-cat="skins">
+      <span class="cat-icon">◆</span>
+      <span>Skins</span>
+    </button>
+    <button class="cat-card" data-cat="texturepacks">
+      <span class="cat-icon">▦</span>
+      <span>Texture Packs</span>
+    </button>
+    <button class="cat-card" data-cat="mods">
+      <span class="cat-icon">✷</span>
+      <span>Mods</span>
+    </button>
+  </div>
+</section>
+
+<section class="wrap explore" id="explore">
+  <h2>Explora lo nuevo</h2>
+  <input type="text" id="searchInput" class="search-input" placeholder="Busca un shader, pack o mod...">
+  <div class="grid" id="resourceGrid"></div>
+  <p class="empty-msg" id="emptyMsg" hidden>No encontramos nada con ese nombre.</p>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="logo">NEKUTOON</div>
+      <p class="disclaimer">Proyecto de fans no oficial. Minecraft es una marca de Mojang Studios / Microsoft.</p>
+    </div>
+    <div class="footer-links">
+      <a href="terms.html">Términos</a>
+      <a href="privacy.html">Privacidad</a>
+      <a href="dmca.html">DMCA</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
